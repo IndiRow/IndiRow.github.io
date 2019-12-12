@@ -1,0 +1,172 @@
+.main {
+	background: url(../img/piano-hands.jpg) 100% no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: auto;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+}
+
+.title {
+	font-family: 'Courgette', cursive;
+	margin-left: 12%;
+	font-size: 3.8em;
+	color: white;
+	margin-top: 55px;
+    text-shadow: 2px 2px black; 
+}
+
+.contentrcard1 {
+	background-color: rgb(0, 0, 0, .95);
+	color: white;
+	font-family: 'Courgette', cursive;
+	margin-top: 30%;
+	margin-right: 65%;
+	margin-left: 20px;
+	border-radius: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 30px;
+}
+
+.yirumaimg1 {
+	width: 100%;
+	margin-bottom: 20px;
+	border-radius: 10px 10px 0 0 ;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	margin-top: 10px;
+}
+
+.contentcard2 {
+	background-color: rgb(0, 0, 0, .95);
+	color: white;
+	font-family: 'Courgette', cursive;
+	margin-left: 65%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 20px;
+	margin-right: 20px;
+}
+
+.yirumaimg2 {
+	width: 100%;
+	border-radius: 10px 10px 0 0 ;
+	margin-bottom: 20px;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	margin-top: 10px;
+}
+
+.vidostitle {
+	font-family: 'Courgette', cursive;
+	font-size: 2.5em;
+	color: white;
+}
+.vidosik {
+	text-align: center;
+	margin-top: 50px;
+	background-color: rgb(0, 0, 0, .95);
+	margin-right: 25%;
+	margin-left: 25%;
+	border-radius: 10px 10px 10px 10px ;
+	padding-top: 10px;
+}
+.vidos {
+	margin-top: 20px;
+	overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.vidos iframe {
+	height: 315px;
+	width: 560px;
+	left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.copyright {
+	color: white;
+	margin-top: 50px;
+	text-align: center;
+	background-color: rgb(0, 0, 0, .90);
+}
+
+.box {
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-left: 10px;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+
+.btn-white{
+  background:white;
+  color:black;
+}
+
+.btn:hover{
+   box-shadow:0px 10px 10px rgb (0, 0, 0, 0.20);
+   transform : translateY(-3px);
+}
+
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+
+.btn-bottom-animation-1{
+  animation:comeFromBottom 1s ease-out .8s;
+}
+
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+
+.btn-white::after {
+    background: #fff;
+}
+
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
